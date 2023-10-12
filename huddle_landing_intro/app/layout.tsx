@@ -5,14 +5,14 @@ import "./globals.css";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600"],
-  fallback:["Open_Sans"],
+  fallback: ["Open_Sans"],
   variable: "--pop",
 });
 
 const open_sans = Open_Sans({
   subsets: ["latin"],
   weight: ["400"],
-  fallback:["sans-serif"],
+  fallback: ["sans-serif"],
   variable: "--open_sans",
 });
 
