@@ -18,7 +18,7 @@ const Icon = ({ icon: Icon }: IconProps) => {
 
 const Home = () => {
   return (
-    <div className="max-lg:m-10 flex flex-col gap-y-10 lg:mx-14 lg:mt-7">
+    <div className="flex flex-col gap-y-10 max-lg:m-10 lg:mx-14 lg:mt-7">
       <Image
         className="max-lg:hidden"
         src={"/logo.svg"}
@@ -45,7 +45,7 @@ const Home = () => {
             className="h-auto w-full"
           />
         </div>
-        <div className="h-min lg:w-[38%] space-y-4 text-white max-lg:text-center">
+        <div className="h-min space-y-4 text-white max-lg:text-center lg:w-[38%]">
           <h1 className="font-popins text-2xl font-semibold leading-10 tracking-wide lg:text-4xl">
             Build The Community Your Fans Will Love
           </h1>
