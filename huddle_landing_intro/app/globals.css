@@ -3,15 +3,30 @@
 @tailwind utilities;
 
 body {
-  background-image: url("../public/bg-mobile.svg");
-  background-color: hsl(257, 40%, 49%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 100%;
+    background-color: hsl(257, 40%, 49%);
 }
 
-@media (min-width: 1024px) {
-  body {
-    background-image: url("../public/bg-desktop.svg");
-  }
+.main-image {
+    background-image: url("../public/bg-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    background-image: url("../public/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .main-image {
+        background-image: url("../public/bg-desktop.svg");
+        background-size: cover;
+    }
+
+    .logo {
+        height: 60px;
+    }
 }
