@@ -35,6 +35,5 @@ yarn-error.log*
 next-env.d.ts
 
 design
-index.htmk
-style-guide.md
 index.html
+style-guide.md

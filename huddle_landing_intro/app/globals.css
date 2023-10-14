@@ -1,32 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-    background-color: hsl(257, 40%, 49%);
-}
-
-.main-image {
-    background-image: url("../public/bg-mobile.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.logo {
-    background-image: url("../public/logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 35px;
-    width: 100%;
-}
-
-@media (min-width:768px) {
-    .main-image {
-        background-image: url("../public/bg-desktop.svg");
-        background-size: cover;
-    }
-
-    .logo {
-        height: 60px;
-    }
-}
