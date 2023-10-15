@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+  .social-btn {
+    @apply flex w-10 h-10 lg:h-12 lg:w-12 cursor-pointer items-center justify-center rounded-full border border-white transition hover:border-soft_magneta;
+  }
+
+  .register-btn {
+    @apply w-[70%] rounded-full bg-white py-3 text-violet drop-shadow-lg transition hover:bg-soft_magneta hover:text-white md:w-[35%] md:py-4;
+  }
+}
+
+body {
+  background-color: theme(colors.violet);
+  background-image: url("../public/bg-mobile.svg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen(lg) {
+  body {
+    background-image: url("../public/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  .social-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme(colors.violet);
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme(colors.white);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Internet Explorer */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
